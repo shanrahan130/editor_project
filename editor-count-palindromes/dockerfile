@@ -1,0 +1,12 @@
+FROM ruby:2.7
+
+WORKDIR /app
+
+COPY . .
+
+# Install Sinatra and the required gems
+RUN gem install sinatra rackup puma
+
+EXPOSE 80
+
+CMD ["ruby", "app.rb"]

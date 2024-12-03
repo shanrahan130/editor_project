@@ -1,0 +1,13 @@
+{
+    "name": "editor-avg-word-length-js",
+    "version": "1.0.0",
+    "description": "Microservice to calculate average word length",
+    "main": "server.js",
+    "scripts": {
+      "start": "node server.js"
+    },
+    "dependencies": {
+      "express": "^4.17.1"
+    }
+  }
+  

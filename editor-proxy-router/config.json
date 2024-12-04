@@ -1,0 +1,12 @@
+{
+    "routes": {
+        "wordcount": "http://editor-wordcount:80",
+        "charcount": "http://editor-charcount:80",
+        "avgWordLength": "http://editor-avg-word-length-js:80",
+        "countVowels": "http://editor-count-vowels:80",
+        "countCommas": "http://editor-count-commas-php:80",
+        "countPalindromes": "http://editor-count-palindromes:80",
+        "saveText": "http://editor-save-text:5008",
+        "getText": "http://editor-save-text:5008"
+    }
+}

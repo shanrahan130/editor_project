@@ -2,6 +2,9 @@
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
 
+// Adding a 3-second delay
+sleep(3);
+
 if (isset($_GET['text'])) {
     $text = $_GET['text'];
     $count = substr_count($text, ",");

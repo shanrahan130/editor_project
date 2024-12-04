@@ -1,12 +1,15 @@
-FROM ruby:2.7
+FROM python:3.8-slim
 
 WORKDIR /app
 
-COPY . .
+# Copy the Python script
+COPY app.py .
 
-# Install Sinatra and the required gems
-RUN gem install sinatra rackup puma
+# Install Flask to serve the app
+RUN pip install Flask
 
+# Expose the required port
 EXPOSE 80
 
-CMD ["ruby", "app.rb"]
+# Run the application
+CMD ["python", "app.py"]
